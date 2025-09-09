@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="tc3-ros-package" type="camera.py" name="tc3_node" output="screen">
+		<param name="camera_ip" type="string" value="192.168.44.1"/>
+		<param name="camera_frame" type="string" value="camera_frame"/>
+		<param name="namespace" type="string" value=""/>
+		<param name="publish_image" type="bool" value="true"/>
+
+	</node>
+</launch>

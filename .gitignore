@@ -1,0 +1,7 @@
+ws_foxy/build
+ws_foxy/install
+ws_foxy/log
+
+ws_noetic/build
+ws_noetic/devel
+ws_noetic/.catkin_workspace

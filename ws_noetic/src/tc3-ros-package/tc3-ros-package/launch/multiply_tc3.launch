@@ -1,0 +1,20 @@
+<launch>
+	<node pkg="tc3-ros-package" type="camera.py" name="tc3_node_left" output="screen">
+		<param name="camera_ip" type="string" value="192.168.42.1"/>
+		<param name="camera_frame" type="string" value="tc_left"/>
+		<param name="namespace" type="string" value="tc_left"/>
+		<param name="publish_image" type="bool" value="true"/>
+	</node>
+	<!-- <node pkg="tc3-ros-package" type="camera.py" name="tc3_node_right" output="screen">
+		<param name="camera_ip" type="string" value="192.168.43.1"/>
+		<param name="camera_frame" type="string" value="tc_right"/>
+		<param name="namespace" type="string" value="tc_right"/>
+		<param name="publish_image" type="bool" value="true"/>
+	</node> -->
+	<node pkg="tc3-ros-package" type="camera.py" name="tc3_node_back" output="screen">
+		<param name="camera_ip" type="string" value="192.168.44.1"/>
+		<param name="camera_frame" type="string" value="tc_back"/>
+		<param name="namespace" type="string" value="tc_back"/>
+		<param name="publish_image" type="bool" value="true"/>
+	</node>
+</launch>
